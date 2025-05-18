@@ -83,16 +83,21 @@ footer {
 #contactDiv button {
     width: 40px;
     height: 40px;
-    background-color: #aa00ff;
+    background-color: #0000;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+button i{
+    color: #ac52af;
+    font-size: 20px;
 
-#contactDiv button:hover {
-    background-color: #cc33ff;
 }
+button i:hover {
+    transform: scale(1.1);
+}
+
 
 @media (max-width: 600px) {
     #countdownDiv {
