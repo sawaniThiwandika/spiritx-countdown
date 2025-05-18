@@ -1,0 +1,115 @@
+body {
+
+    background: linear-gradient(180deg, #211635, #07040b);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    min-height: 100vh;
+}
+
+#titleDiv {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#titleDiv img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    transition: max-width 0.3s ease;
+}
+
+#titleDiv h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #aa00ff;
+}
+
+#countdownDiv {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.card {
+    background-color: #5d0560;
+    padding: 16px 30px;
+    text-align: center;
+    min-width: 80px;
+    box-shadow: 0 0 15px rgba(170, 0, 255, 0.4);
+    transition: transform 0.3s ease;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+#descriptionDiv {
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 32px;
+}
+
+#description {
+    color: #cccccc;
+    font-size: 18px;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+#contactDiv {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+#contactDiv button {
+    width: 40px;
+    height: 40px;
+    background-color: #aa00ff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactDiv button:hover {
+    background-color: #cc33ff;
+}
+
+@media (max-width: 600px) {
+    #countdownDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100px;
+    }
+
+    #titleDiv img {
+        max-width: 300px;
+    }
+
+    #titleDiv h1 {
+        font-size: 32px;
+    }
+
+    #description {
+        font-size: 16px;
+        padding: 0 16px;
+    }
+}
