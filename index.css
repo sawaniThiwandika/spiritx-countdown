@@ -8,6 +8,8 @@ body {
     padding: 32px;
     min-height: 100vh;
     margin: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 #titleDiv {
@@ -43,9 +45,11 @@ body {
     background-color: #270749;
     padding: 25px 60px;
     text-align: center;
-    min-width: 100px;
+    min-width: 60px;
     transition: transform 0.3s ease;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    width: 100%;
+    max-width: 150px;
 }
 
 .card:hover {
@@ -110,7 +114,7 @@ button i:hover {
     }
 
     .card {
-        width: 100px;
+        width: 80%;
     }
 
     #titleDiv img {
